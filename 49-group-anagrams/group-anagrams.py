@@ -7,6 +7,5 @@ class Solution:
                 anagram[list_word] = anagram[list_word] +[word]
             else:
                 anagram[list_word] = [word]
-        for value in anagram.values():
-            output.append(value)
+        output = [value for value in anagram.values()]
         return output 
